@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: veyra-acp
+    runtime: docker
+    plan: free
+    region: frankfurt
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
